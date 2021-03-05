@@ -40,7 +40,7 @@ def home():
 @app.route('/adc/')
 def addRegistro():
     result = "<h1>Adição de Registro</h1><br><ul>"
-    login = Registro(nome='Mailsson', cpf='405649976-10', email='dasgalaxias24@gmail.com', telefone='34087922')
+    login = Registro(nome='Fernando', cpf='405649976-10', email='nando293@gmail.com', telefone='34087922')
     BD.session.add(login)
     BD.session.commit()
     result += "<h4>Cliente Adicionado</h4>"
